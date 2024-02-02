@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 40px;
+    color: white;
+}
+
+body {
+    background-color: rgb(94, 94, 94);
+}
+
+
+p {
+    display: none;
+}
+
+#P-M {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+
+    body {
+        background-color: rgb(175, 40, 40);
+    }
+
+    #P-M {
+        display: none;
+    }
+
+    #P-T {
+        display: block;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    body {
+        background-color: rgb(97, 0, 0);
+    }
+    
+    #P-T {
+        display: none;
+    }
+    
+    #P-D {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    body {
+        background-color: rgb(57, 0, 80);
+    }
+
+    #P-D {
+        display: none;
+    }
+
+    #P-DXL{
+        display: block;
+    }
+}
