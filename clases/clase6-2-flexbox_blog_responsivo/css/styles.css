@@ -36,9 +36,6 @@ main {
 @media screen and (min-width: 768px) {
 
     .post{
-        width: 45%;
-        display: inline-block;
-
 
     }
 }
@@ -47,8 +44,6 @@ main {
 @media screen and (min-width: 992px) {
 
     .post{
-        width: 30%;
-        display: inline-block;
 
     }
 }
@@ -57,9 +52,6 @@ main {
 @media screen and (min-width: 1440px) {
 
     .post{
-        width: 24.5%;
-        display: inline-block;
-
 
     }
 }

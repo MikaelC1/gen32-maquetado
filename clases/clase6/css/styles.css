@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 90px;
+}
+
+.container {
+    margin: 20px 0;
+    border: 2px solid black;
+
+}
+
+.cajaRoja {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(119, 40, 40);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.containerFlexStart {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.containerFlexEnd {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.containerCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.containerSpaceAround {
+    display: flex;
+    justify-content: space-around;
+}
+
+.containerSpaceBewteen {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerSpaceEvenly {
+    display: flex;
+    justify-content: space-evenly;
+}
