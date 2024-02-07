@@ -1,0 +1,9 @@
+body {
+  background-color: black;
+}
+
+section img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */

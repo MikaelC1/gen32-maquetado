@@ -1,0 +1,12 @@
+@import 'global';
+
+body {
+    background-color: $blackBackground;
+}
+
+
+section {
+    img {
+        @include flexCenter(blue);
+    }
+}

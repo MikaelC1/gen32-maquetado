@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// Declaramos Variables
+$blackBackground: black;
+
+//Declaramos Mixins
+
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $chales;
+}
