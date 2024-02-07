@@ -22,7 +22,8 @@ main {
 
 .blog_list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     border: 1px solid black;
     width: 80%;
     padding: 20px;
@@ -44,9 +45,9 @@ main {
 /*tablets*/
 @media screen and (min-width: 768px) {
 
+    
     .post{
         width: 45%;
-
     }
 }
 
@@ -54,7 +55,7 @@ main {
 @media screen and (min-width: 992px) {
 
     .post{
-
+        width: 30%;
     }
 }
 
