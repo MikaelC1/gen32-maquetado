@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Clase 9 - Practica - Bootstrap2</title>
+</head>
+<body class="minh-100vh w-100">
+    
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 0;">
+        <div class="container-fluid" style="background-color: rgb(122, 122, 122);">
+            <a class="navbar-brand" href="#"><h2>Navbar</h2></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here<a><li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+ 
+    <!--Carrusel-->
+    <main class="h-40vh w-100">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/id/259/1920/1080" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/id/833/1920/1080" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/id/2/1920/1080" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main> 
+
+      
+
+<!--Cards1-->
+<section class="container-fluid" style="margin-top: 20px;">
+    <div class="row">
+
+        <!--Row 1-->
+        <!--Img1-->
+        <div class="col-12 col-md-6" style="padding: 0;">
+            <img class="w-100 " src="https://picsum.photos/id/5/1920/1080 " alt="..." >
+        </div>
+        <!--Text1-->
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start " style="padding:25px">
+            <h2>Hola Mundo</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat sint officia quod distinctio, blanditiis saepe modi? Quasi, incidunt eligendi unde rerum consequatur odio, est itaque tempora excepturi natus aliquam pariatur?</p>
+        </div>
+        <!--Row 2-->
+        <!--Text2-->
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start" style="padding: 0;">
+            
+            <h2 class=" d-none d-md-block" style="padding: 0px 25px;">Hola Mundo</h2>
+            <p class=" d-none d-md-block" style="padding: 0px 25px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat sint officia quod distinctio, blanditiis saepe modi? Quasi, incidunt eligendi unde rerum consequatur odio, est itaque tempora excepturi natus aliquam pariatur?</p>
+
+            <img class=" w-100 col-sm-12 col-6-md d-sm-block d-md-none " src="https://picsum.photos/id/5/1920/1080 " alt="...">
+        </div>
+        <!--Img2-->
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start" style="padding: 0;">
+
+            <img class=" w-100 d-none d-md-block " src="https://picsum.photos/id/5/1920/1080 " alt="...">
+
+            <h2 class=" d-block d-md-none" style="padding-top: 25px;">Hola Mundo</h2>
+            <p class=" d-block d-md-none" style="padding: 0px 25px; padding-bottom: 25px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat sint officia quod distinctio, blanditiis saepe modi? Quasi, incidunt eligendi unde rerum consequatur odio, est itaque tempora excepturi natus aliquam pariatur?</p>
+        </div>
+        
+        <!--Row 3-->
+        <!--Img3-->
+        <div class="col-12 col-md-6 " style="padding: 0;">
+            <img class=" w-100 " src="https://picsum.photos/id/5/1920/1080 " alt="...">
+        </div>
+        <!--Text3-->
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start" style="padding:25px">
+            <h2>Hola Mundo</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat sint officia quod distinctio, blanditiis saepe modi? Quasi, incidunt eligendi unde rerum consequatur odio, est itaque tempora excepturi natus aliquam pariatur?</p>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid" style="margin-top: 20px;">
+    <div class="row justify-content-evenly text-center">
+        <div class="col-8 col-md-3">
+            <img src="https://picsum.photos/id/5/150/150" alt="" class="rounded-circle border border-secondary" style="margin-bottom: 15px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor commodi architecto incidunt neque aut nihil laboriosam asperiores, error quae blanditiis iure iusto repudiandae eligendi corrupti voluptate perferendis aliquid veniam maiores!</p></div>
+        <div class="col-8 col-md-3">
+             <img src="https://picsum.photos/id/5/150/150" alt="" class="rounded-circle border border-secondary" style="margin-bottom: 15px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, doloribus? Cum et quas rem culpa perferendis quibusdam! Tenetur rem ut, pariatur obcaecati officiis amet aliquam modi quod accusantium tempora consectetur?</p></div>
+        <div class="col-8 col-md-3">
+             <img src="https://picsum.photos/id/5/150/150" alt="" class="rounded-circle border border-secondary" style="margin-bottom: 15px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni deserunt fuga accusamus a quisquam illo ipsum tempore recusandae quos! Nam blanditiis animi reiciendis iusto necessitatibus ad, quis architecto nihil voluptatum!</p></div>
+    </div>
+
+</section>
+
+
+<footer class="container-fluid">
+    <div class="row justify-content-between" style="background-color: antiquewhite;">
+        <div class="col-4 text-center">
+            <h2>Footer</h2>
+        </div>
+        <div class="col-4 text-center">
+            <h2>Hola Mundo</h2>
+        </div>
+    </div>
+
+</footer>
+     
+    
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
